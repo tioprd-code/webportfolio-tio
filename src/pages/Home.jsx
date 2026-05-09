@@ -9,7 +9,7 @@ import DownloadCVSection from '../components/portfolio/DownloadCVSection';
 import ContactSection from '../components/portfolio/ContactSection';
 import Footer from '../components/portfolio/Footer';
 
-const PORTRAIT_IMAGE = 'https://media.base44.com/images/public/69e0ea0196d06c0fe2814fe2/ba85e363e_generated_image.png';
+const PORTRAIT_IMAGE = 'port/Foto Web1.jpeg';
 
 const UX_IMAGES = [
   '/port/Savey Portfolio.png',
@@ -18,10 +18,10 @@ const UX_IMAGES = [
 ];
 
 const GRAPHIC_IMAGES = [
-  'https://media.base44.com/images/public/69e0ea0196d06c0fe2814fe2/04fc25e47_generated_image.png',
-  'https://media.base44.com/images/public/69e0ea0196d06c0fe2814fe2/c2e67c9f9_generated_image.png',
-  'https://media.base44.com/images/public/69e0ea0196d06c0fe2814fe2/be3a3c915_generated_image.png',
-  'https://media.base44.com/images/public/69e0ea0196d06c0fe2814fe2/602863eb4_generated_image.png',
+  'port/Clicky Branding Port.jpeg',
+  '/port/Aura Port.jpeg',
+  '/port/Traveloka Port.jpeg',
+  '/port/Nuoir Brand.jpeg',
 ];
 
 export default function Home() {
