@@ -1,18 +1,25 @@
 import React from "react";
 import { ArrowDown, Download, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion"; // Pastikan sudah install framer-motion
 
 export default function HeroSection({ portraitImage }) {
   return (
     <section className="min-h-screen flex items-center relative overflow-hidden bg-white">
       {/* Subtle grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:64px_64px] opacity-60" />
+      
       {/* Indigo glow */}
       <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-indigo-100 rounded-full blur-3xl opacity-40" />
 
-      <div className="relative max-w-6xl mx-auto px-6 lg:px-8 w-full pt-24 pb-16 lg:py-0 lg:min-h-screen lg:flex lg:items-center">
+      <div className="relative max-w-6xl mx-auto px-6 lg:px-8 w-full pt-28 pb-20 lg:py-0 lg:min-h-screen lg:flex lg:items-center">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
-          {/* Left */}
-          <div>
+          
+          {/* Left Content */}
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <div className="inline-flex items-center gap-2 bg-indigo-50 text-indigo-600 text-xs font-semibold tracking-wider uppercase px-3 py-1.5 rounded-full mb-8">
               <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-pulse" />
               Available for Freelance
@@ -25,23 +32,17 @@ export default function HeroSection({ portraitImage }) {
             </h1>
 
             <p className="text-lg text-gray-600 font-medium mt-4">
-              Graphic Designer <span className="text-gray-300 mx-2">·</span>{" "}
-              UI/UX Designer
+              Graphic Designer <span className="text-gray-300 mx-2">·</span> UI/UX Designer
             </p>
 
             <p className="text-base text-gray-500 mt-4 max-w-md leading-relaxed">
               Creating visual and digital experiences that impact everyone. It's
-              not just about aesthetics, but about the benefits and content for
-              everyone.
+              not just about aesthetics, but about functional design for everyone.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-10">
               <button
-                onClick={() =>
-                  document
-                    .querySelector("#portfolio")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => document.querySelector("#portfolio")?.scrollIntoView({ behavior: "smooth" })}
                 className="group inline-flex items-center gap-2.5 bg-gray-900 text-white text-sm font-medium px-7 py-3.5 rounded-full hover:bg-indigo-600 transition-all duration-300"
               >
                 View Portfolio
@@ -57,62 +58,73 @@ export default function HeroSection({ portraitImage }) {
               </a>
             </div>
 
-            {/* Stats */}
-            <div className="flex gap-10 mt-14 pt-8 border-t border-gray-100">
+            {/* Stats Section - Disesuaikan grid-nya agar tidak overlap di Mobile */}
+            <div className="grid grid-cols-3 gap-4 sm:gap-10 mt-14 pt-8 border-t border-gray-100">
               {[
                 { n: "2+", l: "Years Experience" },
                 { n: "500+", l: "Projects Done" },
                 { n: "100+", l: "Happy Clients" },
-              ].map((s) => (
-                <div key={s.l}>
-                  <div className="text-2xl font-bold text-gray-900">{s.n}</div>
-                  <div className="text-xs text-gray-400 mt-0.5 font-medium">
+              ].map((s, i) => (
+                <motion.div 
+                  key={s.l}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 + (i * 0.1) }}
+                >
+                  <div className="text-xl sm:text-2xl font-bold text-gray-900">{s.n}</div>
+                  <div className="text-[10px] sm:text-xs text-gray-400 mt-0.5 font-medium leading-tight">
                     {s.l}
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
-          {/* Right — portrait */}
-          <div className="hidden lg:flex justify-center items-center">
+          {/* Right — Portrait Image */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="hidden lg:flex justify-center items-center"
+          >
             <div className="relative">
-              {/* Background shape */}
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-slate-100 rounded-3xl translate-x-4 translate-y-4" />
               <div className="relative w-80 xl:w-96 aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-gray-200">
                 <img
                   src={portraitImage}
-                  alt="Sofia Moreno — Designer"
+                  alt="Adytio Pradana"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
+              
               {/* Floating badge */}
-              <div className="absolute -bottom-5 -left-6 bg-white rounded-2xl shadow-xl px-5 py-3.5 border border-gray-100">
-                <div className="text-xs text-gray-400 font-medium">
-                  Currently working on
-                </div>
-                <div className="text-sm font-semibold text-gray-800 mt-0.5">
-                  Graphic Design{" "}
-                </div>
-              </div>
+              <motion.div 
+                animate={{ y: [0, -10, 0] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -bottom-5 -left-6 bg-white rounded-2xl shadow-xl px-5 py-3.5 border border-gray-100"
+              >
+                <div className="text-xs text-gray-400 font-medium">Currently working on</div>
+                <div className="text-sm font-semibold text-gray-800 mt-0.5">UI/UX Design & Branding</div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Perbaikan Scroll Indicator - Ditambahkan 'hidden md:flex' agar tidak menabrak statistik di HP */}
       <button
-        onClick={() =>
-          document
-            .querySelector("#about")
-            ?.scrollIntoView({ behavior: "smooth" })
-        }
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-gray-400 hover:text-gray-700 transition-colors"
+        onClick={() => document.querySelector("#about")?.scrollIntoView({ behavior: "smooth" })}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-1.5 text-gray-400 hover:text-gray-700 transition-colors"
       >
-        <span className="text-xs font-medium tracking-widest uppercase">
+        <span className="text-[10px] font-bold tracking-[0.2em] uppercase">
           Scroll
         </span>
-        <ArrowDown className="w-4 h-4 animate-bounce" />
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          <ArrowDown className="w-4 h-4" />
+        </motion.div>
       </button>
     </section>
   );
