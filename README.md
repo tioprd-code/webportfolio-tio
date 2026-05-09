@@ -1,37 +1,37 @@
-# Adytio Pradana | Graphic & UI/UX Designer Portfolio 🚀
+# Adytio Pradana | UI/UX & Graphic Designer 🎨
 
-Welcome to my professional portfolio repository. This project showcases my journey as a **Graphic Designer** and **UI/UX Designer**, blending creative aesthetics with functional web development.
+Welcome to my professional portfolio. I am a creative professional focused on crafting visually stunning and user-centered digital experiences.
 
 ## 👤 About Me
-I am **Adytio Pradana** (Tio), a designer with over 2 years of experience creating impactful visual and digital experiences. Based in Mojokerto, East Java, I specialize in transforming complex problems into user-centered designs.
+I am **Adytio Pradana** (Tio), a UI/UX and Graphic Designer with over 2 years of experience. Based in Mojokerto, East Java, I have collaborated with over 500 clients to bring their visual identities to life since 2024.
 
-*   **Experience**: Handled 500+ clients since 2024.
-*   **Philosophy**: Design isn't just about how it looks; it's about how it works and benefits the user.
+My design philosophy is simple: **Aesthetics must meet functionality.** I don't just design for looks; I design for impact and user benefits.
 
-## 🛠️ Tech Stack & Tools
-- **Design**: Figma, Adobe Illustrator, Canva.
-- **Frontend**: React.js, Vite, Tailwind CSS.
-- **Backend**: PHP, Laravel, MySQL.
-- **Icons**: Lucide React.
+## 🛠️ Skills & Tools
+- **UI/UX Design**: Figma, Adobe Illustrator.
+- **CMS & Web**: WordPress (Building functional websites without complex code).
+- **Basic Development**: HTML, CSS, Tailwind CSS, and basic JavaScript/React.
+- **Graphic Design**: Brand Identity, Social Media Design, and Branding.
 
 ## 📂 Featured Projects
 
 ### 1. Gokas — Classroom Cash Management UI
 A dedicated UI design for a classroom "Kas" (treasury) tracking application.
-*   **Focus**: Simplifying how students manage and monitor their class funds with a clean, easy-to-use interface.
-*   **Role**: UI/UX Designer.
+*   **Focus**: Creating a clean and intuitive interface for students to manage and monitor class funds effortlessly.
 
 ### 2. Savey (Stackz) — Financial Tracking App
-A comprehensive UI/UX project focused on personal finance management, developed between January and March 2026.
-*   **Features**: Real-time balance tracking, detailed transaction history, and intuitive data visualization.
-*   **Role**: UI/UX Designer & Frontend Developer.
+A comprehensive UI/UX project focused on personal finance management.
+*   **Design Focus**: Real-time balance tracking, transaction history, and user-friendly data visualization.
 
 ### 3. Booking.com Dummy Project
-A redesign/clone exercise to study complex user flows and high-traffic UI patterns.
-*   **Objective**: Enhancing the search-to-checkout experience and improving mobile responsiveness.
+A redesign/clone exercise to study complex user flows and improve the mobile booking experience.
 
-## 🚀 Installation
-To run this portfolio locally:
+## 🚀 How to View My Work
+This portfolio is built using **React** and **Tailwind CSS** to showcase my ability to implement my designs into clean, basic code.
+
+1. **Clone the repo**
+   ```bash
+   git clone [https://github.com/yourusername/web-portfolio-tio.git](https://github.com/yourusername/web-portfolio-tio.git)
 
 1. **Clone the repo**
    ```bash

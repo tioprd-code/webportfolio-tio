@@ -4,10 +4,10 @@ import { base44 } from '@/api/base44Client';
 
 const socials = [
   { icon: Mail, label: 'tiothedreamver@gmail.com', href: 'mailto:tiothedreamver@gmail.com' },
-  { icon: Globe, label: 'behance.net/adytiopradana', href: 'https://behance.net/adytiopradana' },
-  { icon: Github, label: 'github.com/adytiopradana', href: 'https://github.com/adytiopradana' },
-  { icon: Instagram, label: 'instagram.com/adytiopradana', href: 'https://instagram.com/adytiopradana' },
-  { icon: Music, label: 'tiktok.com/@adytiopradana', href: 'https://tiktok.com/@adytiopradana' },
+  { icon: Globe, label: 'behance.net/adytiopradana1', href: 'https://behance.net/adytiopradana1' },
+  { icon: Github, label: 'github.com/tioprd-code', href: 'https://github.com/tioprd-code' },
+  { icon: Instagram, label: 'instagram.com/thedream.bytio', href: 'https://instagram.com/thedream.bytio' },
+  { icon: Music, label: 'tiktok.com/@artspacebytio', href: 'https://tiktok.com/@artspacebytio' },
 ];
 
 export default function ContactSection() {
@@ -18,7 +18,7 @@ export default function ContactSection() {
     e.preventDefault();
     setStatus('sending');
     await base44.integrations.Core.SendEmail({
-      to: 'sofia.moreno@email.com',
+      to: 'tiothedreamver@gmail.com', 
       subject: `Portfolio inquiry from ${form.name}`,
       body: `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`,
     });

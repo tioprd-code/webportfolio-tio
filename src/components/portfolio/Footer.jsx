@@ -11,10 +11,10 @@ const links = [
 
 const socials = [
   { icon: Mail, href: 'Mailto:tiothedreamver@gmail.com', label: 'Email' },
-  { icon: Globe, href: 'https://behance.net/usernameanda', label: 'Behance' },
-  { icon: Github, href: 'https://github.com/usernameanda', label: 'Github' },
-  { icon: Instagram, href: 'https://instagram.com/usernameanda', label: 'Instagram' },
-  { icon: Music2, href: 'https://tiktok.com/@usernameanda', label: 'TikTok' },
+  { icon: Globe, href: 'https://behance.net/adytiopradana1', label: 'Behance' },
+  { icon: Github, href: 'https://github.com/tioprd-code', label: 'Github' },
+  { icon: Instagram, href: 'https://instagram.com/thedream.bytio', label: 'Instagram' },
+  { icon: Music2, href: 'https://tiktok.com/@artspacebytio', label: 'TikTok' },
 ];
 
 export default function Footer() {
@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-14 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-600">© {new Date().getFullYear()} Sofia Moreno. All rights reserved.</p>
+          <p className="text-xs text-gray-600">© {new Date().getFullYear()} Adytio Pradana. All rights reserved.</p>
           <p className="text-xs text-gray-700">Designed with precision & purpose</p>
         </div>
       </div>
