@@ -18,7 +18,7 @@ export default function ContactSection() {
     e.preventDefault();
     setStatus('sending');
     await base44.integrations.Core.SendEmail({
-      to: 'tiothedreamver@gmail.com', 
+      to: 'mailto:tiothedreamver@gmail.com', 
       subject: `Portfolio inquiry from ${form.name}`,
       body: `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`,
     });
