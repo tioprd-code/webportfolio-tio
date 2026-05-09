@@ -3,7 +3,7 @@ import { Send, Mail, Globe, CheckCircle, Github, Instagram, Music } from 'lucide
 import { base44 } from '@/api/base44Client';
 
 const socials = [
-  { icon: Mail, label: 'adytio.pradana@email.com', href: 'mailto:adytio.pradana@email.com' },
+  { icon: Mail, label: 'tiothedreamver@gmail.com', href: 'mailto:tiothedreamver@gmail.com' },
   { icon: Globe, label: 'behance.net/adytiopradana', href: 'https://behance.net/adytiopradana' },
   { icon: Github, label: 'github.com/adytiopradana', href: 'https://github.com/adytiopradana' },
   { icon: Instagram, label: 'instagram.com/adytiopradana', href: 'https://instagram.com/adytiopradana' },

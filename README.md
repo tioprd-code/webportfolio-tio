@@ -1,39 +1,56 @@
-**Welcome to your Base44 project** 
+# Adytio Pradana | Graphic & UI/UX Designer Portfolio 🚀
 
-**About**
+Welcome to my professional portfolio repository. This project showcases my journey as a **Graphic Designer** and **UI/UX Designer**, blending creative aesthetics with functional web development.
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+## 👤 About Me
+I am **Adytio Pradana** (Tio), a designer with over 2 years of experience creating impactful visual and digital experiences. Based in Mojokerto, East Java, I specialize in transforming complex problems into user-centered designs.
 
-This project contains everything you need to run your app locally.
+*   **Experience**: Handled 500+ clients since 2024.
+*   **Philosophy**: Design isn't just about how it looks; it's about how it works and benefits the user.
 
-**Edit the code in your local development environment**
+## 🛠️ Tech Stack & Tools
+- **Design**: Figma, Adobe Illustrator, Canva.
+- **Frontend**: React.js, Vite, Tailwind CSS.
+- **Backend**: PHP, Laravel, MySQL.
+- **Icons**: Lucide React.
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+## 📂 Featured Projects
 
-**Prerequisites:** 
+### 1. Gokas — Classroom Cash Management UI
+A dedicated UI design for a classroom "Kas" (treasury) tracking application.
+*   **Focus**: Simplifying how students manage and monitor their class funds with a clean, easy-to-use interface.
+*   **Role**: UI/UX Designer.
 
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
+### 2. Savey (Stackz) — Financial Tracking App
+A comprehensive UI/UX project focused on personal finance management, developed between January and March 2026.
+*   **Features**: Real-time balance tracking, detailed transaction history, and intuitive data visualization.
+*   **Role**: UI/UX Designer & Frontend Developer.
 
-```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
+### 3. Booking.com Dummy Project
+A redesign/clone exercise to study complex user flows and high-traffic UI patterns.
+*   **Objective**: Enhancing the search-to-checkout experience and improving mobile responsiveness.
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
+## 🚀 Installation
+To run this portfolio locally:
 
-Run the app: `npm run dev`
+1. **Clone the repo**
+   ```bash
+   git clone [https://github.com/yourusername/web-portfolio-tio.git](https://github.com/tioprd-code/webportfolio-tio.git)
 
-**Publish your changes**
+    Install dependencies
+    Bash
 
-Open [Base44.com](http://Base44.com) and click on Publish.
+    npm install
 
-**Docs & Support**
+    Start development server
+    Bash
 
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
+    npm run dev
 
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+📬 Contact Information
+
+I am always open to new freelance opportunities and creative collaborations.
+
+    Email: tiothedreamver@gmail.com
+
+    Instagram: @thedream.bytio

@@ -10,7 +10,7 @@ const links = [
 ];
 
 const socials = [
-  { icon: Mail, href: 'thedreamver@gmail.com', label: 'Email' },
+  { icon: Mail, href: 'Mailto:tiothedreamver@gmail.com', label: 'Email' },
   { icon: Globe, href: 'https://behance.net/usernameanda', label: 'Behance' },
   { icon: Github, href: 'https://github.com/usernameanda', label: 'Github' },
   { icon: Instagram, href: 'https://instagram.com/usernameanda', label: 'Instagram' },
@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <div className="text-lg font-bold tracking-tight">Sofia<span className="text-indigo-400">.</span></div>
+            <div className="text-lg font-bold tracking-tight">Adytio<span className="text-indigo-400">.</span></div>
             <p className="text-sm text-gray-400 mt-3 max-w-xs leading-relaxed">
               Graphic Designer & UI/UX Designer crafting impactful visual and digital experiences.
             </p>
